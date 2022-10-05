@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 6
+title: Turtleneck detection
 description: a project with no image
-img:
-importance: 4
+img: assets/img/Turtle-neck.png
+importance: 6
 category: fun
 ---
 
