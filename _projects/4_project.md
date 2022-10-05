@@ -2,7 +2,7 @@
 layout: page
 title: turtlebot_3 with SLAM
 description: another without an image
-img: assets/img/turtlebot_3.jpg
+img: assets/img/turtlebot/turtlebot_3.jpg
 importance: 4
 category: fun
 ---

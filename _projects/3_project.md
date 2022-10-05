@@ -2,7 +2,7 @@
 layout: page
 title: background elimination
 description: Data augmentation to increase performance
-img: assets/img/Background_elimination.png
+img: assets/img/background/Background_elimination.png
 importance: 3
 category: work
 ---
@@ -19,7 +19,7 @@ category: work
 
 <div class="row">
     <div class="col-sm - 3 mt mt-md-0">
-        {% include figure.html path="assets/img/Mask_RCNN.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/Mask_RCNN.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -32,7 +32,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Solo.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/Solo.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -49,10 +49,10 @@ category: work
     
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/bottom-up.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/bottom-up.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-7 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/bottom-up_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/bottom-up_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -149,20 +149,21 @@ def show_result_ins(img,
         img_show[back_ground] = img[back_ground]*0+ color_mask * 0 #Multiplied the background by zero to remove the background
         mmcv.imwrite(img_show, out_file)
 ```
-accessed inference.py of Solo code
+accessed and modified inference.py of Solo code
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FPN_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/FPN_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FPN_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/FPN_2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/FPN_3.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/background/FPN_3.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     Figure 4. In the backbone network, the feature map is extracted through the resnet
 </div>
+

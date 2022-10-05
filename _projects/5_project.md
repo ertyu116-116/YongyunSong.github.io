@@ -2,7 +2,7 @@
 layout: page
 title: Drone Detection
 description: a project with a background image
-img: assets/img/Drone_1.png
+img: assets/img/drone/Drone_1.png
 importance: 5
 category: fun
 ---
