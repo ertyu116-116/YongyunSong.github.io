@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Hanyang University</a>
 
-profile:
-  align: right
-  image:
-  address: >
+# profile:
+#   align: right
+#   image:
+#   address: >
     
     
 news: true  # includes a list of news items
