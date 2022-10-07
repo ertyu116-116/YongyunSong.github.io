@@ -1,7 +1,7 @@
 ---
 layout: page
 title: turtlebot_3 with SLAM
-description: another without an image
+description: Localization, mapping, and path-planning
 img: assets/img/turtlebot/turtlebot_3.jpg
 importance: 4
 category: fun

@@ -167,3 +167,18 @@ accessed and modified inference.py of Solo code
     Figure 4. In the backbone network, the feature map is extracted through the resnet
 </div>
 
+* ## Result
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/original.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/seg.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/Background_elimination.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 5. On the left, Original image. Middle, Image with one-shot instance segmentation. Right, image with data augmentation from my code.
