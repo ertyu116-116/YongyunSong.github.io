@@ -4,8 +4,9 @@ title: Perspective Projection
 description: with mono cameras
 img: assets/img/perspective_projection/mono-camera_projection.png
 importance: 1
-category: work
+category: research
 ---
+* ## 3D point cloud image progection to 2D image (for removing background withsegmentation)
 
 ```python
 #!/usr/bin/env python3.4
@@ -277,215 +278,7 @@ plt.subplot(3,4,2)
 plt.title("mono camera 3")
 scatter = plt.scatter(image_coord[0,:,],image_coord[1,:,],c=rgb)
 
-#mono camera 5
-fx =1286.3425
-fy = 1282.2571
-skew_c = 0
-cx = 1287.1922
-cy = 1035.7207
-intrinsic_matrix = np.array([[fx,skew_c,cx],[0,fy,cy],[0,0,1]])
-#extrinsic_matrix
-extrinsic_matrix = np.array([[0.95917879, 0.14486955, -0.24287624, 2802.36],
-                        [-0.14883925, 0.98885933, 0.0020263296, -371.48387],
-                        [0.24046399, 0.034205906, 0.97005517, 605.537]]
-                        )
-camera_coord = np.matmul(extrinsic_matrix,img_homo.T) #(3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2,:,] #make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix,normalized_camera_coord) #(3,3) X (3,193910)
-
-rgb = np.concatenate((r.T,g.T,b.T),axis=1)
-rgb = rgb/256 # make 0-1 float
-plt.subplot(3,4,3)
-plt.title("mono camera 5")
-scatter = plt.scatter(image_coord[0,:,],image_coord[1,:,],c=rgb)
-
-#mono camera 7
-fx =1288.0381
-fy = 1213.7298
-skew_c = 0
-cx = 1288.4049
-cy = 1047.8253
-intrinsic_matrix = np.array([[fx,skew_c,cx],[0,fy,cy],[0,0,1]])
-
-#extrinsic_matrix
-extrinsic_matrix = np.array([[0.8583016, 0.2526078, -0.44666281, 4188.1098],
-                        [-0.26920753, 0.9626996, 0.027143891 ,-612.10609],
-                        [0.43685887, 0.09694735, 0.89429052,964.38422]]
-                        )
-camera_coord = np.matmul(extrinsic_matrix,img_homo.T) #(3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2,:,] #make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix,normalized_camera_coord) #(3,3) X (3,193910)
-
-rgb = np.concatenate((r.T,g.T,b.T),axis=1)
-rgb = rgb/256 # make 0-1 float
-plt.subplot(3,4,4)
-plt.title("mono camera 7")
-scatter = plt.scatter(image_coord[0,:,],image_coord[1,:,],c=rgb)
-
-#mono camera 9
-fx =1284.3096
-fy = 1242.4413
-skew_c = 0
-cx = 1284.4279
-cy = 1042.1316
-intrinsic_matrix = np.array([[fx,skew_c,cx],[0,fy,cy],[0,0,1]])
-
-#extrinsic_matrix
-extrinsic_matrix = np.array([[-0.99956982, 0.013956132, -0.025795499, 3364.4476],
-                        [-0.016483159, 0.4601638, 0.88768101, -2651.0879],
-                        [0.024258749, 0.88772434, -0.4597358, 4257.7071]]
-                        )
-camera_coord = np.matmul(extrinsic_matrix,img_homo.T) #(3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2,:,] #make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix,normalized_camera_coord) #(3,3) X (3,193910)
-
-rgb = np.concatenate((r.T,g.T,b.T),axis=1)
-rgb = rgb/256 # make 0-1 float
-plt.subplot(3,4,5)
-plt.title("mono camera 9")
-scatter = plt.scatter(image_coord[0,:,],image_coord[1,:,],c=rgb)
-
-#mono camera 11
-fx =1292.0913
-fy = 1215.9717
-skew_c = 0
-cx = 1291.9516
-cy = 1030.2045
-intrinsic_matrix = np.array([[fx,skew_c,cx],[0,fy,cy],[0,0,1]])
-
-
-#extrinsic_matrix
-extrinsic_matrix = np.array([[-0.96730441, -0.13599484, 0.21407379, 1896.9672],
-                        [0.12675996, 0.47184531, 0.87252159, -2559.2354],
-                        [-0.21966815, 0.87112996, -0.43917935, 4072.0264]]
-                        )
-camera_coord = np.matmul(extrinsic_matrix,img_homo.T) #(3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2,:,] #make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix,normalized_camera_coord) #(3,3) X (3,193910)
-
-rgb = np.concatenate((r.T,g.T,b.T),axis=1)
-rgb = rgb/256 # make 0-1 float
-plt.subplot(3,4,6)
-plt.title("mono camera 11")
-scatter = plt.scatter(image_coord[0,:,],image_coord[1,:,],c=rgb)
-
-# mono camera 13
-fx = 1287.3334
-fy = 1265.1114
-skew_c = 0
-cx = 1287.0891
-cy = 1038.8095
-intrinsic_matrix = np.array([[fx, skew_c, cx], [0, fy, cy], [0, 0, 1]])
-
-# extrinsic_matrix
-extrinsic_matrix = np.array([[-0.9504208, -0.15890217, 0.26730208, 529.28109],
-                             [0.16130411, 0.48297702, 0.86064753, -2342.8452],
-                             [-0.26585952, 0.86109424, -0.43339984, 3748.7594]]
-                            )
-camera_coord = np.matmul(extrinsic_matrix, img_homo.T)  # (3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2, :, ]  # make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix, normalized_camera_coord)  # (3,3) X (3,193910)
-
-rgb = np.concatenate((r.T, g.T, b.T), axis=1)
-rgb = rgb / 256  # make 0-1 float
-plt.subplot(3, 4, 7)
-plt.title("mono camera 13")
-scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
-
-# mono camera 15
-fx =1289.8211
-fy = 1203.4967
-skew_c = 0
-cx = 1289.5996
-cy = 1030.41
-intrinsic_matrix = np.array([[fx, skew_c, cx], [0, fy, cy], [0, 0, 1]])
-
-# extrinsic_matrix
-extrinsic_matrix = np.array([[ -0.8475433,-0.26729894, 0.45849932, -769.46865],
-                             [0.27472035, 0.51820665, 0.80993246, -2112.0755],
-                             [-0.45409149, 0.81241193, -0.36577012, 3340.7309]]
-                            )
-camera_coord = np.matmul(extrinsic_matrix, img_homo.T)  # (3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2, :, ]  # make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix, normalized_camera_coord)  # (3,3) X (3,193910)
-
-rgb = np.concatenate((r.T, g.T, b.T), axis=1)
-rgb = rgb / 256  # make 0-1 float
-plt.subplot(3, 4, 8)
-plt.title("mono camera 15")
-scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
-
-# mono camera 17
-fx =1270.3472
-fy = 1272.0425
-skew_c = 0
-cx = 1270.0608
-cy = 1032.2583
-intrinsic_matrix = np.array([[fx, skew_c, cx], [0, fy, cy], [0, 0, 1]])
-
-
-# extrinsic_matrix
-extrinsic_matrix = np.array([[0.78632702, -0.34202561, 0.51449811, -1307.5761],
-                             [0.32192198, 0.93761757, 0.13129936, -203.16387],
-                             [-0.52731021, 0.062384012 ,0.84737959 ,378.54639]]
-                            )
-camera_coord = np.matmul(extrinsic_matrix, img_homo.T)  # (3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2, :, ]  # make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix, normalized_camera_coord)  # (3,3) X (3,193910)
-
-rgb = np.concatenate((r.T, g.T, b.T), axis=1)
-rgb = rgb / 256  # make 0-1 float
-plt.subplot(3, 4, 9)
-plt.title("mono camera 17")
-scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
-
-# mono camera 19
-fx =1283.2529
-fy = 1230.6382
-skew_c = 0
-cx = 1283.6855
-cy = 1015.227
-intrinsic_matrix = np.array([[fx, skew_c, cx], [0, fy, cy], [0, 0, 1]])
-
-
-# extrinsic_matrix
-extrinsic_matrix = np.array([[ 0.3495146, 0.52103313, -0.77869379 ,5116.9855],
-                             [-0.50977551, 0.80307763, 0.30853728, -1096.4477],
-                             [0.7861097, 0.28912074 ,0.54629729, 1826.9661]]
-                            )
-camera_coord = np.matmul(extrinsic_matrix, img_homo.T)  # (3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2, :, ]  # make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix, normalized_camera_coord)  # (3,3) X (3,193910)
-
-rgb = np.concatenate((r.T, g.T, b.T), axis=1)
-rgb = rgb / 256  # make 0-1 float
-plt.subplot(3, 4, 10)
-plt.title("mono camera 19")
-scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
-
-# mono camera 21
-fx =1296.0327
-fy = 1251.0236
-skew_c = 0
-cx = 1295.6452
-cy = 1047.8688
-intrinsic_matrix = np.array([[fx, skew_c, cx], [0, fy, cy], [0, 0, 1]])
-
-
-# extrinsic_matrix
-extrinsic_matrix = np.array([[-0.84526811, 0.30032507, -0.44195777, 4274.3424],
-                             [-0.28467871, 0.44684393, 0.8481088, -2526.5964],
-                             [0.45219448, 0.84269529, -0.29220677, 4120.2694]]
-                            )
-camera_coord = np.matmul(extrinsic_matrix, img_homo.T)  # (3,4) X (4,193910) = (3,193910)
-normalized_camera_coord = camera_coord / camera_coord[2, :, ]  # make homogeneous value 1
-image_coord = np.matmul(intrinsic_matrix, normalized_camera_coord)  # (3,3) X (3,193910)
-
-rgb = np.concatenate((r.T, g.T, b.T), axis=1)
-rgb = rgb / 256  # make 0-1 float
-plt.subplot(3, 4, 11)
-plt.title("mono camera 21")
-scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
+...
 
 # mono camera 23
 fx =1294.3257
@@ -514,3 +307,18 @@ scatter = plt.scatter(image_coord[0, :, ], image_coord[1, :, ], c=rgb)
 
 plt.show()
 ```
+
+* ## concatenate two image, depth image and rgb iamge
+
+<div class="row">
+    <div class="col-sm - 3 mt mt-md-0">
+        {% include figure.html path="assets/img/perspective_projection/depth.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm - 3 mt mt-md-0">
+        {% include figure.html path="assets/img/perspective_projection/rgb_image.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>    
+</div>
+<div class="caption">
+    Figure 1. Left is depth image, right is rgb image augmented by eliminating backrounds.
+</div>      
+

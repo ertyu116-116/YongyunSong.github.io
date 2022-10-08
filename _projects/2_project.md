@@ -4,7 +4,7 @@ title: Directional Vector Visualization
 description: paper implementation
 img: assets/img/3d_instance_segmentation/dir_loss.png
 importance: 2
-category: work
+category: research
 ---
 
 ## Dir_loss in the paper of 3d instance segmentation via multi-task metric learning.

@@ -4,7 +4,7 @@ title: Turtleneck detection
 description: Senior_project
 img: assets/img/senior_project/Turtle-neck.png
 importance: 6
-category: fun
+category: work
 ---
 
 <div class="row">

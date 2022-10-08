@@ -4,7 +4,7 @@ title: background elimination
 description: Data augmentation to increase performance
 img: assets/img/background/Background_elimination.png
 importance: 3
-category: work
+category: research
 ---
 
 ## SOLO v1(Single Stage Instance Segmentation) 

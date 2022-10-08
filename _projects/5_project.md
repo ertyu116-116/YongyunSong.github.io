@@ -4,7 +4,7 @@ title: Drone Detection
 description: finding small objects (Drones) and robustness in the background
 img: assets/img/drone/Drone_1.png
 importance: 5
-category: fun
+category: work
 ---
 
 Dataset - robustness of background
