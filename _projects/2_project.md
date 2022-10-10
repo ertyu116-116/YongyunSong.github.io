@@ -7,7 +7,18 @@ importance: 2
 category: research
 ---
 
-## Dir_loss in the paper of 3d instance segmentation via multi-task metric learning.
+* ## Dir_loss in the paper of 3d instance segmentation via multi-task metric learning.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/3d_instance_segmentation/dir_loss.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1. Dir_loss
+</div>
+
+* ## framework of 3d instance segmentation via multi-task metric learning.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -18,7 +29,7 @@ category: research
     </div>    
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Figure 2. Left is framework, right is image segmentated by this research.
 </div>
 
 
@@ -245,7 +256,7 @@ if __name__ == "__main__":
     </div>
 </div>
 <div class="caption">
-    Dissertation
+    Figure 3. Embedding Space.
 </div>
 
 * ## Result
@@ -256,7 +267,7 @@ if __name__ == "__main__":
     </div>
 </div>
 <div class="caption">
-    Feature embedding
+    Figure 4. Feature embedding.
 </div>
 
 
@@ -266,5 +277,5 @@ if __name__ == "__main__":
     </div>
 </div>
 <div class="caption">
-    Dir_loss
+    Figure 5. Dir_loss.
 </div>

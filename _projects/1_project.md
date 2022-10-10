@@ -8,6 +8,17 @@ category: research
 ---
 * ## 3D point cloud image progection to 2D image (for removing background withsegmentation)
 
+<div class="row">
+    <div class="col-sm - 3 mt mt-md-0">
+        {% include figure.html path="assets/img/perspective_projection/mono-camera_projection.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1. 2D images from calibration matrix.
+</div>      
+
+
+
 ```python
 #!/usr/bin/env python3.4
 
@@ -319,6 +330,6 @@ plt.show()
     </div>    
 </div>
 <div class="caption">
-    Figure 1. Left is depth image, right is rgb image augmented by eliminating backrounds.
+    Figure 2. Left is depth image, right is rgb image augmented by eliminating backrounds.
 </div>      
 

@@ -9,8 +9,24 @@ category: research
 
 ## SOLO v1(Single Stage Instance Segmentation) 
 ## Paper Implementation  
-  
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/original.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/seg.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/background/Background_elimination.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1. On the left, Original image. Middle, Image with one-shot instance segmentation. Right, image with data augmentation from my code.  
+</div>
 
+
+* ## Two stage vs Single stage
+  
 
 
 > * Two stage (Doing segmentation and instance segmentation after finding the bounding box)  
@@ -23,7 +39,7 @@ category: research
     </div>
 </div>
 <div class="caption">
-    Figure 1. The Mask R-CNN framework for instance segmentation.
+    Figure 2. The Mask R-CNN framework for instance segmentation.
 </div>      
 
 > * One stage (Getting the instance mask right away, instead of finding the bounding box)
@@ -36,7 +52,7 @@ category: research
     </div>
 </div>
 <div class="caption">
-    Figure 2. Solo framework
+    Figure 3. Solo framework
 </div>     
 
 
@@ -56,7 +72,7 @@ category: research
     </div>
 </div>
 <div class="caption">
-    Figure 3. Bottom-up segmentation (Pixel-wise embedding)
+    Figure 4. Bottom-up segmentation (Pixel-wise embedding)
 </div>  
 
 #### Modifiying Solo code 
@@ -164,7 +180,7 @@ accessed and modified inference.py of Solo code
     </div>
 </div>
 <div class="caption">
-    Figure 4. In the backbone network, the feature map is extracted through the resnet
+    Figure 5. In the backbone network, the feature map is extracted through the resnet
 </div>
 
 * ## Result
@@ -181,4 +197,5 @@ accessed and modified inference.py of Solo code
     </div>
 </div>
 <div class="caption">
-    Figure 5. On the left, Original image. Middle, Image with one-shot instance segmentation. Right, image with data augmentation from my code.
+    Figure 6. On the left, Original image. Middle, Image with one-shot instance segmentation. Right, image with data augmentation from my code.
+</div>

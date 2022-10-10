@@ -7,7 +7,24 @@ importance: 4
 category: work
 ---
 
+* ## turtlebot_3 with SLAM
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/turtlebot/turtlebot_3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1. Mapping
+</div>     
+
+
 <iframe width="461" height="820" src="https://www.youtube.com/embed/vw9Mafc4hDM" title="turtlebot3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="caption">
+    Path-planning
+</div>     
+
 
 * ## autonomus driving with move_base
 
@@ -73,6 +90,10 @@ if __name__ == '__main__':
 * ## fall detection with turtlebot3 using jetson tx2
 
 <iframe width="457" height="813" src="https://www.youtube.com/embed/Yx25mwMAHZ8" title="fall detection with turtlebot3 using jetson tx2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="caption">
+    fall detection
+</div>     
 
 * ## pub.cpp (for publish real time images with opencv)
 
