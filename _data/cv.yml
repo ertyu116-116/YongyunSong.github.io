@@ -1,72 +1,78 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Yongyun Song
-    - name: Date of Birth
-      value: 06th November 1996
-    - name: Languages
-      value: Korean, English, Chinese
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Yongyun Song
+#     - name: Date of Birth
+#       value: 06th November 1996
+#     - name: Languages
+#       value: Korean, English, Chinese
 
-- title: Education
-  type: time_table
-  contents:
-    - title: Bachelor of Electrical Engineering (Major)
-      institution: Hanyang University, Ansan, Korea
-      year: 2016
-      description:
-        - Expected graduation in February 2023
-        - GPA 3.24/4.0 (89.9%)
-    - title: Bachelor of Applied Mathematics (Dual Major)
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 2016
-      description:
-        - Expected graduation in February 2023
-        - GPA 3.24/4.0 (89.9%)
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: Bachelor of Electrical Engineering (Major)
+#       institution: Hanyang University, Ansan, Korea
+#       year: 2016
+#       description:
+#         - Expected graduation in February 2023
+#         - GPA 3.24/4.0 (89.9%)
+#     - title: Bachelor of Applied Mathematics (Dual Major)
+#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+#       year: 2016
+#       description:
+#         - Expected graduation in February 2023
+#         - GPA 3.24/4.0 (89.9%)
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: R & D Intern in Robot & Drone Department
-      institution: Korea Electric Power Research Institute, Daejeon, Korea
-      year: 2021-2022
-      description:
-        - title: Worked in the robotics department and participated in Development of Integrated Operation Technology for Anti-drone Protection of Electricity Facilities (R20IA03) and built drone detection system to prohibit a drone from coming to an electrical substation. Besides I made autonomous patrol robots using Turtlebot3, Jetson tx1, lidar, and IMU sensor for the electrical substation in Korea Electric Power Research Institute where It is a national research institute established for electricity supply in South Korea.
-          contents:
-            - Cropped out a large video data one by one in 40 frames to prevent overfitting due to similar data and backgrounds. 
-            - Connected AI and robot with ROS programming.
-            - Created an autonomous robot using SLAM algorithm to be mapping and localization, if a person falls, the topic is handed over and checked on the server computer.
-            - Utilize camera calibration and pose estimation.
+# - title: Experience
+#   type: time_table
+#   contents:
+#     - title: R & D Intern in Robot & Drone Department
+#       institution: Korea Electric Power Research Institute, Daejeon, Korea
+#       year: 2021-2022
+#       description:
+#         - title: Worked in the robotics department and participated in Development of Integrated Operation Technology for Anti-drone Protection of Electricity Facilities (R20IA03) and built drone detection system to prohibit a drone from coming to an electrical substation. Besides I made autonomous patrol robots using Turtlebot3, Jetson tx1, lidar, and IMU sensor for the electrical substation in Korea Electric Power Research Institute where It is a national research institute established for electricity supply in South Korea.
+#           contents:
+#             - Cropped out a large video data one by one in 40 frames to prevent overfitting due to similar data and backgrounds. 
+#             - Connected AI and robot with ROS programming.
+#             - Created an autonomous robot using SLAM algorithm to be mapping and localization, if a person falls, the topic is handed over and checked on the server computer.
+#             - Utilize camera calibration and pose estimation.
 
-    - title: R & D Intern in Software Department
-      institution: DeepInsight Corp. Pangyo, Korea
-      year: 2021
-      description:
-        - title: Development of Intelligent Image Security System Technology Based on Integrated 2D/3D Image Analysis of Unmanaged Store Environment project at Deep Insight Corp., which creates artificial intelligence technology and 3D sensing technology.
-          contents:
-            - Researched 3D-vision with dissertations.
-            - Designed 3d point cloud center-based detection using the abnormal behavior detection algorithm and kalman filter.
+#     - title: R & D Intern in Software Department
+#       institution: DeepInsight Corp. Pangyo, Korea
+#       year: 2021
+#       description:
+#         - title: Development of Intelligent Image Security System Technology Based on Integrated 2D/3D Image Analysis of Unmanaged Store Environment project at Deep Insight Corp., which creates artificial intelligence technology and 3D sensing technology.
+#           contents:
+#             - Researched 3D-vision with dissertations.
+#             - Designed 3d point cloud center-based detection using the abnormal behavior detection algorithm and kalman filter.
 
-    - title: Undergraduate Research Intern
-      institution: Hanyang University, Ansan, Korea
-      year: 2019-2020
-      description:
-        - title: Participated in projects such as a Whole-Scene 3D Video Reconstruction of General Environments Containing Dynamic Deformation, Reconstruction of Super Resolution 3D Shape Using Multi-Projector, Visual Memory Storage and Collection Networking in Professor Lee Min-sik's 3D computer vision laboratory.
-          contents:
-            - Created a hierarchical agglomerative clustering algorithm by Euclidean distance to understand PointNet++ dissertation.
-            - Preprocessing data, converting the 3D point cloud to a 2D image using intrinsic and extrinsic matrix.
-            - The converted 2D image’s background acting as noise was removed using the Solov1 instance segmentation algorithm.
-            - The data removed noise background was used to increase detection accuracy with both MMDetection and Detectron2 algorithms.
-            - Visualized 3d embedding space to compare prediction to ground truth.
+#     - title: Undergraduate Research Intern
+#       institution: Hanyang University, Ansan, Korea
+#       year: 2019-2020
+#       description:
+#         - title: Participated in projects such as a Whole-Scene 3D Video Reconstruction of General Environments Containing Dynamic Deformation, Reconstruction of Super Resolution 3D Shape Using Multi-Projector, Visual Memory Storage and Collection Networking in Professor Lee Min-sik's 3D computer vision laboratory.
+#           contents:
+#             - Created a hierarchical agglomerative clustering algorithm by Euclidean distance to understand PointNet++ dissertation.
+#             - Preprocessing data, converting the 3D point cloud to a 2D image using intrinsic and extrinsic matrix.
+#             - The converted 2D image’s background acting as noise was removed using the Solov1 instance segmentation algorithm.
+#             - The data removed noise background was used to increase detection accuracy with both MMDetection and Detectron2 algorithms.
+#             - Visualized 3d embedding space to compare prediction to ground truth.
     
-    - title: Undergraduate Research Intern Research Intern
-      institution: Hanyang University, Ansan, Korea
-      year: 2017
-      description: 
-        - title: Studied and presented computer vision at the weekly seminar to lay the foundation for Professor Lee Min-sik's 3D computer vision courses.
-          contents:
-          - Studied how to operate Linux operating system.
-          - Programmed coin detection algorithms using Hough Transform and Canny edge on Matlab.
+#     - title: Undergraduate Research Intern Research Intern
+#       institution: Hanyang University, Ansan, Korea
+#       year: 2017
+#       description: 
+#         - title: Studied and presented computer vision at the weekly seminar to lay the foundation for Professor Lee Min-sik's 3D computer vision courses.
+#           contents:
+#           - Studied how to operate Linux operating system.
+#           - Programmed coin detection algorithms using Hough Transform and Canny edge on Matlab.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Guitar, Kendo, Chess
+
 
 #     - title: Associate Professor of Theoretical Physics
 #       institution: University of Zurich, Zurich, Switzerland
@@ -101,8 +107,3 @@
 #       items:
 #         - Description 1.
 #         - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Guitar, Kendo, Chess
