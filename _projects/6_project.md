@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Turtleneck detection
+title: Forward Head Posture Detection For Patients
 description: Senior_project
 img: assets/img/senior_project/Turtle-neck.png
 importance: 6
